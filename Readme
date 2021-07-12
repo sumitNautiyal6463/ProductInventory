@@ -1,0 +1,5 @@
+# install nuget package
+Step 1. Microsoft.EntityFrameworkCore.SqlServer
+Step 2. Newtonsoft.Json
+Step 3. System.Linq.Dynamic.Core
+Step 4. Microsoft.AspNetCore.Authentication.JwtBearer
