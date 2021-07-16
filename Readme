@@ -1,3 +1,4 @@
+# ShopBridge
 # install nuget package
 
 #Connect with SQL Server
@@ -11,3 +12,19 @@ Step 3. System.Linq.Dynamic.Core
 
 #Make jwt token
 Step 4. Microsoft.AspNetCore.Authentication.JwtBearer
+
+
+# Run the Database Structure
+Step 1. Run the Database Structure from given file.
+
+# Import Postman package to run the file
+Step 1. import the postman package file to check the API sequence By.
+
+# Run ShopBridge Application
+Step 1. Get token from Login API
+Step 2. Put token in header section of Product Item Save API
+Step 3. Put token in header section of Product item Get By Id API
+Step 4. Put token in header section of Product Item Update API
+Step 5. Put token in header section of Product Item Delete API
+
+
