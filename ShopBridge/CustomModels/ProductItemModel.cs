@@ -1,4 +1,5 @@
 ﻿using ShopBridge.Common;
+using ShopBridge.CustomAttribute;
 using System;
 using System.Collections.Generic;
 
@@ -7,9 +8,13 @@ namespace ShopBridge.CustomModels
     public class ProductItemModel
     {
         public int ItemId { get; set; }
+        [ProductItem]
         public string Name { get; set; }
+        [ProductItem]
         public string Description { get; set; }
+        [ProductItem]
         public int Quantity { get; set; }
+        [ProductItem]
         public decimal Price { get; set; }
         public decimal TotalPrice { get; set; }
         public bool Status { get; set; }

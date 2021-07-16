@@ -1,0 +1,13 @@
+# install nuget package
+
+#Connect with SQL Server
+Step 1. Microsoft.EntityFrameworkCore.SqlServer
+
+#Convert into Json format at response time
+Step 2. Newtonsoft.Json
+
+#For Sorting Purpose
+Step 3. System.Linq.Dynamic.Core
+
+#Make jwt token
+Step 4. Microsoft.AspNetCore.Authentication.JwtBearer

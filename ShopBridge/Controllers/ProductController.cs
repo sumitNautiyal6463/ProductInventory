@@ -72,22 +72,8 @@ namespace ShopBridge.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
-                {
-                    var Result = await _productitem.ProductItemSave(Model, UserDetail());
-                    return Ok(new { Result, Success = Result.Success });
-                }
-                else
-                {
-                    var Result = (from item in ModelState.Values
-                                  from error in item.Errors
-                                  select error.ErrorMessage).ToList();
-                    //foreach (var item in Result)
-                    //{
-                    //    objEr.ErrorList.Add(new AppErrorMessage { Error = item });
-                    //}
-                    return Ok(new { Result, Success = false });
-                }
+                var Result = await _productitem.ProductItemSave(Model, UserDetail());
+                return Ok(new { Result, Success = Result.Success });
             }
             catch (Exception ex)
             {
