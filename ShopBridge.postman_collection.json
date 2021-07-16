@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "0aafc186-0171-4fd9-82f3-e8c85a682dd1",
+		"name": "ShopBridge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmailId\": \"admin@gmail.com\",\r\n    \"Password\": \"admin123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:18193/api/Login/Token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18193",
+					"path": [
+						"api",
+						"Login",
+						"Token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductItemSave",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkFkbWluIiwianRpIjoiZWI4MjE1NjEtMjg5OS00NzQyLWExMjEtOTY3MDdkNDI4N2U5IiwiVXNlcklkIjoiMiIsIkVtYWlsSWQiOiJhZG1pbkBnbWFpbC5jb20iLCJMb2dnZWRPbiI6IjE2LTA3LTIwMjEgMTk6MzI6MzMiLCJuYmYiOjE2MjY0NjM5NTMsImV4cCI6MTYyNjU1MDM1MywiaWF0IjoxNjI2NDYzOTUzLCJpc3MiOiJodHRwOi8vdGVjaC5jb20iLCJhdWQiOiJodHRwOi8vdGVjaC5jb20ifQ.7JzXuCKkS0WM93FrWPT2XzF8G81fDnyljD1KpVCuxqQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Red\",\r\n    \"Description\": \"This is a red color\",\r\n    \"Quantity\": 7,\r\n    \"Price\": 7000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:18193/api/Product/ProductItemSave",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18193",
+					"path": [
+						"api",
+						"Product",
+						"ProductItemSave"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductItemUpdate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkFkbWluIiwianRpIjoiZWI4MjE1NjEtMjg5OS00NzQyLWExMjEtOTY3MDdkNDI4N2U5IiwiVXNlcklkIjoiMiIsIkVtYWlsSWQiOiJhZG1pbkBnbWFpbC5jb20iLCJMb2dnZWRPbiI6IjE2LTA3LTIwMjEgMTk6MzI6MzMiLCJuYmYiOjE2MjY0NjM5NTMsImV4cCI6MTYyNjU1MDM1MywiaWF0IjoxNjI2NDYzOTUzLCJpc3MiOiJodHRwOi8vdGVjaC5jb20iLCJhdWQiOiJodHRwOi8vdGVjaC5jb20ifQ.7JzXuCKkS0WM93FrWPT2XzF8G81fDnyljD1KpVCuxqQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ItemId\": 7,\r\n    \"Name\": \"Green\",\r\n    \"Description\": \"This is a red color\",\r\n    \"Quantity\": 7,\r\n    \"Price\": 7000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:18193/api/Product/ProductItemSave",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18193",
+					"path": [
+						"api",
+						"Product",
+						"ProductItemSave"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductItemGetById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkFkbWluIiwianRpIjoiZWI4MjE1NjEtMjg5OS00NzQyLWExMjEtOTY3MDdkNDI4N2U5IiwiVXNlcklkIjoiMiIsIkVtYWlsSWQiOiJhZG1pbkBnbWFpbC5jb20iLCJMb2dnZWRPbiI6IjE2LTA3LTIwMjEgMTk6MzI6MzMiLCJuYmYiOjE2MjY0NjM5NTMsImV4cCI6MTYyNjU1MDM1MywiaWF0IjoxNjI2NDYzOTUzLCJpc3MiOiJodHRwOi8vdGVjaC5jb20iLCJhdWQiOiJodHRwOi8vdGVjaC5jb20ifQ.7JzXuCKkS0WM93FrWPT2XzF8G81fDnyljD1KpVCuxqQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ItemId\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:18193/api/Product/ProductItemGetById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18193",
+					"path": [
+						"api",
+						"Product",
+						"ProductItemGetById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductItemDelete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkFkbWluIiwianRpIjoiZWI4MjE1NjEtMjg5OS00NzQyLWExMjEtOTY3MDdkNDI4N2U5IiwiVXNlcklkIjoiMiIsIkVtYWlsSWQiOiJhZG1pbkBnbWFpbC5jb20iLCJMb2dnZWRPbiI6IjE2LTA3LTIwMjEgMTk6MzI6MzMiLCJuYmYiOjE2MjY0NjM5NTMsImV4cCI6MTYyNjU1MDM1MywiaWF0IjoxNjI2NDYzOTUzLCJpc3MiOiJodHRwOi8vdGVjaC5jb20iLCJhdWQiOiJodHRwOi8vdGVjaC5jb20ifQ.7JzXuCKkS0WM93FrWPT2XzF8G81fDnyljD1KpVCuxqQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ItemId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:18193/api/Product/ProductItemDelete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18193",
+					"path": [
+						"api",
+						"Product",
+						"ProductItemDelete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductItemList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkFkbWluIiwianRpIjoiZWI4MjE1NjEtMjg5OS00NzQyLWExMjEtOTY3MDdkNDI4N2U5IiwiVXNlcklkIjoiMiIsIkVtYWlsSWQiOiJhZG1pbkBnbWFpbC5jb20iLCJMb2dnZWRPbiI6IjE2LTA3LTIwMjEgMTk6MzI6MzMiLCJuYmYiOjE2MjY0NjM5NTMsImV4cCI6MTYyNjU1MDM1MywiaWF0IjoxNjI2NDYzOTUzLCJpc3MiOiJodHRwOi8vdGVjaC5jb20iLCJhdWQiOiJodHRwOi8vdGVjaC5jb20ifQ.7JzXuCKkS0WM93FrWPT2XzF8G81fDnyljD1KpVCuxqQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"start\": 0,\r\n    \"length\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:18193/api/Product/ProductItemList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18193",
+					"path": [
+						"api",
+						"Product",
+						"ProductItemList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
