@@ -13,7 +13,7 @@ namespace ShopBridge.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class ProductController : ControllerBase
     {
         private readonly IProductItem _productitem;

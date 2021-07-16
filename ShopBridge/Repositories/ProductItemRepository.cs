@@ -93,7 +93,6 @@ namespace ShopBridge.Repositories
                     if (productItem == null)
                     {
                         ProductItem product = new ProductItem();
-                        product.ItemId = Model.ItemId;
                         product.Name = Model.Name;
                         product.Price = Model.Price;
                         product.Quantity = Model.Quantity;
